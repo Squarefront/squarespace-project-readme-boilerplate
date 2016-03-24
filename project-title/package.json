@@ -1,0 +1,75 @@
+{
+  "title": "Your Project Title",
+  "name": "your-project-title",
+  "description": "Your Project Title's top-level development repo.",
+  "version": "0.1.0",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^6.3.1",
+    "babel-core": "^6.6.5",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-add-module-exports": "^0.1.2",
+    "babel-polyfill": "^6.6.1",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-stage-0": "^6.1.18",
+    "body-parser": "^1.14.2",
+    "chokidar-cli": "^1.2.0",
+    "eslint": "^1.10.1",
+    "expose-loader": "^0.7.1",
+    "fg-loadcss": "^0.2.4",
+    "fg-loadjs": "^0.2.3",
+    "imports-loader": "^0.6.5",
+    "jsdoc": "^3.4.0",
+    "jsdoc-oblivion": "0.0.4",
+    "node-sass": "^3.4.2",
+    "parallelshell": "^2.0.0",
+    "postcss-cli": "^2.4.0",
+    "uglifyjs": "^2.4.10",
+    "webpack": "^1.12.12"
+  },
+  "config": {
+    "scss_file": "./sass/screen.scss",
+    "css_file": "./sqs_template/styles/screen.css",
+    "js_file": "./sqs_template/scripts/app.js",
+    "js_file_min": "./sqs_template/scripts/app.min.js",
+    "js_map": "./sqs_template/scripts/app.js.map",
+    "js_map_min": "./sqs_template/scripts/app.min.js.map"
+  },
+  "scripts": {
+    "jquery": "git clone https://github.com/jquery/jquery.git js/lib/jquery && cd js/lib/jquery && npm install && grunt custom:-deprecated,-effects,-effects/Tween,-effects/animatedSelector,-css,-css/addGetHookIf,-css/adjustCSS,-css/curCSS,-css/hiddenVisibleSelectors,-css/showHide,-css/support,-css/var/cssExpand,-css/var/getStyles,-css/var/isHidden,-css/var/rmargin,-css/var/rnumnonpx,-css/var/swap,-dimensions,-offset,-wrap,-exports/amd,-event/alias,-core/ready",
+    "doc:js": "jsdoc js/src/ -r -R README.md -P package.json -t node_modules/jsdoc-oblivion/template -c node_modules/jsdoc-oblivion/template/jsdoc.conf.json -d js/docs",
+    "lint:js": "eslint js/src",
+    "build": "npm run build:js && npm run build:css",
+    "build:js": "npm run lint:js && webpack -d",
+    "build:css": "node-sass --include-path scss $npm_package_config_scss_file $npm_package_config_css_file",
+    "postbuild:css": "postcss --use autoprefixer --autoprefixer.browsers 'last 2 versions' --output $npm_package_config_css_file $npm_package_config_css_file",
+    "watch": "parallelshell 'npm run watch:js' 'npm run watch:sass'",
+    "watch:js": "chokidar ./js/src/* --initial -d 10 -c 'npm run build:js'",
+    "watch:sass": "chokidar ./sass/* --initial -d 10 -c 'npm run build:css'",
+    "min:js": "uglifyjs --compress --mangle --in-source-map $npm_package_config_js_map --source-map $npm_package_config_js_map_min --output $npm_package_config_js_file_min $npm_package_config_js_file",
+    "start": "npm run watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/your-username/your-project-title.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/your-project-title/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/your-username/your-project-title/blob/master/LICENSE"
+    }
+  ],
+  "keywords": [],
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Jason Barone",
+      "email": "jason@jasonbarone.com",
+      "url": "http://jasonbarone.com"
+    }
+  ],
+  "readmeFilename": "README.md"
+}
