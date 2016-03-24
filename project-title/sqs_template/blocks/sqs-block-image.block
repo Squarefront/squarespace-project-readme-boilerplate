@@ -1,0 +1,44 @@
+{###############################################################################
+
+    SQUARESPACE SYSTEM BLOCK TEMPLATE - IMAGE
+
+    This file, in conjunction with its `.conf` file, allows us to overwrite
+    Squarespace's own system block template.
+
+    OBJECT MODEL
+    info: =>
+
+        altText:                            string
+        description:                        boolean
+        hasAspectRatio:                     boolean
+        hasDescription:                     boolean
+        hasPercentageWidth:                 boolean
+        hasRatio:                           boolean
+        imageWidth:                         number
+        imageWidthPercentage:               number
+        isLightBox:                         boolean
+        isLinkTo:                           boolean
+        isVSize:                            boolean
+        layout:                             string
+        linkTo:                             string
+        newwindow:                          boolean
+        ratio:                              float
+        showCaption:                        boolean
+        src:                                string
+        stretch:                            boolean
+        textWidthPercentage:                number
+
+###############################################################################}
+
+
+
+
+
+
+{###############################################################################
+
+<script>
+    console.log( "image", {@|json-pretty} );
+</script>
+
+###############################################################################}

@@ -1,0 +1,54 @@
+/******************************************************************************
+ * Icons
+ *
+ * Here you can create a site-wide icon system that's easy to edit.
+*******************************************************************************/
+.icon {
+    &:before {
+        backface-visibility: hidden;
+        background-repeat: no-repeat;
+        background-size: 3em 23em;
+        content: '';
+        display: inline-block;
+        font-size: inherit;
+        height: 1em;
+        width: 1em;
+        margin: 0 4px 0 0;
+        mask-repeat: no-repeat;
+        mask-size: 3em 23em;
+        vertical-align: top;
+        .cssmask & {
+            background-color: $color-black;
+            mask-image: url('#{$path-to-assets}#{$icon-font-name}.svg');
+        }
+        .no-cssmask & {
+            background-image: url('#{$path-to-assets}#{$icon-font-name}.svg');
+        }
+    }
+    &.-style--color:before {
+        background-color: transparent;
+        background-image: url('#{$path-to-assets}#{$icon-font-name}.svg');
+        mask-image: none;
+    }
+}
+.icon--large {
+    text-align: center;
+    &:before {
+        display: block;
+        font-size: 34px;
+        margin-bottom: .15em;
+    }
+}
+
+
+
+/******************************************************************************
+ * Icon Sprite Labels and Positions
+ *
+ * References the position in your icons grid svg file.
+ * Experimental. Will improve this in future release. :)
+*******************************************************************************/
+.icon--name:before {
+    background-position: 0 0;
+    mask-position: 0 0;
+}

@@ -65,4 +65,6 @@ sftp-config.json
 # Typically you'll manage your Squarespace template in another repo.
 ###############################################################################
 
-/sqs_template
+# Typically you'll want to uncomment the following line so your template
+# is not store with your top-level repo.
+# /sqs_template

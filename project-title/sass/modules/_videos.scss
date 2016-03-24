@@ -1,0 +1,14 @@
+/******************************************************************************
+ * Videos
+ *
+ * Custom CSS styles that relate to custom videos module.
+ *
+ * This CSS file should probably related to your custom /js/src/modules/ module.
+*******************************************************************************/
+.main__video {
+    opacity: 0;
+    background-color: $color-background-accent;
+    &.is-loaded {
+        opacity: 1;
+    }
+}

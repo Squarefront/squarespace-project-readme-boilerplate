@@ -1,0 +1,99 @@
+/******************************************************************************
+ * Modifiers
+ *
+ * Modifiers are classes that are used with elements (or other classes) to
+ * change or overwrite a CSS value.
+*******************************************************************************/
+
+
+
+/******************************************************************************
+ * Background Images
+*******************************************************************************/
+.-cover {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.-cover--top {
+    background-position: 50% 0;
+}
+.-cover--right {
+    background-position: 100% 50%;
+}
+.-cover--bottom {
+    background-position: 50% 100%;
+}
+.-cover--left {
+    background-position: 0 50%;
+}
+
+
+
+/******************************************************************************
+ * Lazy Loading Classes
+*******************************************************************************/
+.-is-lazy-loading {
+    opacity: 0;
+}
+.-is-lazy-transition {
+    transition: opacity $ease-duration $ease-cubic;
+}
+.-is-lazy-loaded {
+    opacity: 1;
+}
+.-is-lazy-handled {
+}
+
+
+
+/******************************************************************************
+ * Typography
+*******************************************************************************/
+.-text--center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.-text--right {
+    text-align: right;
+}
+.-text--left {
+    text-align: left;
+}
+
+
+
+/******************************************************************************
+ * Visibility
+*******************************************************************************/
+.-visibility-40 {
+    opacity: 0.40;
+}
+.-visibility-50 {
+    opacity: 0.50;
+}
+.-visibility-75 {
+    opacity: 0.75;
+}
+
+
+
+/******************************************************************************
+ * Fills
+*******************************************************************************/
+.-bg-black {
+    background-color: $color-black;
+}
+
+
+
+/******************************************************************************
+ * Display
+*******************************************************************************/
+.-block {
+    display: block;
+}
+.-none {
+    display: none;
+}

@@ -1,0 +1,174 @@
+/******************************************************************************
+ * Variables
+ *
+ * Keep your Sass variables stored here for organization.
+*******************************************************************************/
+
+
+
+/******************************************************************************
+ * Asset Paths
+*******************************************************************************/
+$path-to-assets: "/s/";
+
+
+
+/******************************************************************************
+ * Fonts
+*******************************************************************************/
+$sans-text: sans-serif;
+$serif-text: serif;
+
+
+
+/******************************************************************************
+ * Icons
+*******************************************************************************/
+// enter the file name of your icon svg sprite
+$icon-font-name: "icons__ui";
+
+// whatever your icon grid is designed around
+$icon-size: 60px;
+
+
+
+/******************************************************************************
+ * Colors
+*******************************************************************************/
+$color-black: #000000;
+$color-white: #FFFFFF;
+
+$color-background-color: #151515;
+$color-background-accent: #353535;
+
+// simple way to keep a reference of brand palette colors
+$color-brand-palette-black: #252525;
+$color-brand-palette-blue: #435E9F;
+
+
+
+/******************************************************************************
+ * Grid
+*******************************************************************************/
+$grid-length: 12;
+$grid-columns: 12 11 10 9 8 7 6 5 4 3 2 1;
+
+
+
+/******************************************************************************
+ * Sizes
+ *
+ * Still working on this with regards to Squarespace templates. :)
+*******************************************************************************/
+$page-padding: 115px;
+$mobile-padding: 40px;
+$wrapper-padding: 25px;
+
+$p-width: 680px;
+$p-width-wide: 740px;
+$p-width-narrow: 520px;
+
+$page-width: 960px;
+$page-width-wide: 1280px;
+$page-width-narrow: 720px;
+
+$nudge-size: 80px;
+
+
+
+/******************************************************************************
+ * Typography
+ *
+ * This will get a complete refresh of a new type method I'm working on.
+ * CSS calc px + viewport width units FTW. Coming soon. :)
+*******************************************************************************/
+$p-size-xsmall: 12px;
+$p-size-small: 13px;
+$p-size-medium: 14px;
+$p-size-large: 15px;
+$p-size-xlarge: 16px;
+
+$meta-size-small: 12px;
+$meta-size-medium: 13px;
+$meta-size-large: 14px;
+$meta-size-xlarge: 15px;
+
+$h1-size-small: 48px;
+$h1-size-medium: 58px;
+$h1-size-large: 68px;
+$h1-size-xlarge: 108px;
+
+$h2-size-small: 28px;
+$h2-size-medium: 36px;
+$h2-size-large: 40px;
+$h2-size-xlarge: 44px;
+
+$h3-size-small: 22px;
+$h3-size-medium: 28px;
+$h3-size-large: 32px;
+$h3-size-xlarge: 34px;
+
+$h4-size-small: 14px;
+$h4-size-medium: 16px;
+$h4-size-large: 18px;
+$h4-size-xlarge: 20px;
+
+$h5-size-small: 12px;
+$h5-size-medium: 14px;
+$h5-size-large: 16px;
+$h5-size-xlarge: 18px;
+
+$bq-size-small: 16px;
+$bq-size-medium: 22px;
+$bq-size-large: 32px;
+$bq-size-xlarge: 42px;
+
+
+
+/******************************************************************************
+ * Breakpoints
+*******************************************************************************/
+$break-desktop-large: 2200px;
+$break-desktop: 1920px;
+$break-laptop-full: 1680px;
+$break-laptop-medium: 1440px;
+$break-tablet-full: 1280px;
+$break-tablet-medium: 1024px;
+$break-tablet-small: 768px;
+$break-mobile-full: 640px;
+$break-mobile-medium: 480px;
+$break-mobile-small: 320px;
+
+
+
+/******************************************************************************
+ * Animations
+*******************************************************************************/
+$ease: ease;
+$ease-in: ease-in;
+$ease-out: ease-out;
+$ease-in-out: ease-in-out;
+$ease-cubic: cubic-bezier( 0.77, 0, 0.175, 1 );
+$long-duration: 1000ms;
+$anim-duration: 800ms;
+$ease-duration: 600ms;
+$midi-duration: 400ms;
+$fast-duration: 200ms;
+
+
+
+/******************************************************************************
+ * Layering
+*******************************************************************************/
+$z_layer_10: 100;
+$z_layer_09: 90;
+$z_layer_08: 80;
+$z_layer_07: 70;
+$z_layer_06: 60;
+$z_layer_05: 50;
+$z_layer_04: 40;
+$z_layer_03: 30;
+$z_layer_02: 20;
+$z_layer_01: 10;
+$z_layer_behind: -1;
+$z_layer_infront: 1000;
