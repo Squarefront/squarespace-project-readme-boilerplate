@@ -5,9 +5,7 @@ Squarespace Project Readme Boilerplate
 
 
 ## Project Overview
-Developers suck at proper documentation. This repo aims to help you improve your project README by giving you some structure for Squarespace projects.
+Up your documentation game, impress your clients and look sharp when working with other developers. This repo aims to help you improve your project documentation by showing you some best practice for documenting Squarespace projects.
 
-### Usage
-* Clone.
-* Find & Replace PROJECT_TITLE with your project title.
-* Profit.
+### What's In This Repo?
+This repo is an example of an entire top-level dev tools repo plus a bare bones Squarespace template, with example files.
