@@ -63,6 +63,12 @@ In order to work on this project you'll need access to some (or all) of these we
     * Email: [name@domain.com](mailto:name@domain.com)
     * Github: [github.com/GITHUB_USERNAME](https://github.com/GITHUB_USERNAME)
 
+* **Squarespace Support**
+    * Platform Support
+    * Email: [customercare@squarespace.com](mailto:customercare@squarespace.com)
+    * Official Documentation: [https://developers.squarespace.com](https://developers.squarespace.com)
+    * Official Help Site: [https://help.squarespace.com](https://help.squarespace.com)
+
 
 
 ## Getting Started
