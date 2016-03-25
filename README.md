@@ -13,7 +13,7 @@ This repo is an example of an entire top-level dev tools repo plus a bare bones 
 ### Highlights
 
 * Structured READMEs that thoroughly explain everything going on.
-* Readable Squarespace template comments to help your devs understand learn Squarespace while they work.
+* Readable Squarespace template comments to help your devs understand and learn Squarespace while they work.
 * Readable configuration file comments.
 
 ## Usage

@@ -19,7 +19,7 @@ module.exports = {
     module: {
         loaders: [
             {
-                test: /js\/src\/jquery\/dist.*\.js$/,
+                test: /js\/lib\/jquery\/dist.*\.js$/,
                 loader: "expose?$!expose?jQuery"
             },
             {
